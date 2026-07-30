@@ -6,6 +6,42 @@ body {
   color: #000;
 }
 
+/* ===== NAVBAR: sits at the top, puts items in a row ===== */
+nav {
+    display: flex;              /* puts children side by side */
+    align-items: center;        /* lines them up vertically in the middle */
+    gap: 20px;                  /* space between each item */
+    padding: 10px 40px;
+    background-color: #c8b4e8;
+}
+
+/* Logo image inside the navbar */
+nav img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;         /* makes it a circle */
+    border: 2px solid #4a3580;
+}
+
+/* Brand name next to logo */
+nav span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex: 1;                    /* pushes the links to the right */
+}
+
+/* Nav links */
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* ===== HEADER ===== */
 header {
   display: flex;
