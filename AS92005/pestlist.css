@@ -1,0 +1,163 @@
+/* Pest list page */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   background: #DCD0FF;
+   font-family: Arial, sans-serif;
+   color: #000;
+}
+
+
+nav {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 10px 30px;
+   background: #c8b4e8;
+}
+
+
+nav img {
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   border: 2px solid #4a3580;
+   object-fit: cover;
+}
+
+
+nav span {
+   flex: 1;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+nav a {
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+
+.page-intro {
+   text-align: center;
+   padding: 28px 20px 10px;
+}
+
+
+.page-intro p {
+   max-width: 700px;
+   margin: 12px auto;
+   line-height: 1.6;
+}
+
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   gap: 22px;
+   padding: 20px 35px 30px;
+}
+
+
+.card {
+   border: 2px solid #4a3580;
+   border-radius: 12px;
+   padding: 14px;
+   text-align: center;
+   background: white;
+}
+
+
+.card img {
+   width: 100%;
+   aspect-ratio: 1;
+   object-fit: cover;
+   border-radius: 7px;
+}
+
+
+.card h2 {
+   font-size: 22px;
+   margin: 12px 0 7px;
+}
+
+
+.card p {
+   line-height: 1.5;
+}
+
+
+.values-note {
+   max-width: 900px;
+   margin: 0 auto 30px;
+   padding: 20px;
+   text-align: center;
+   line-height: 1.6;
+}
+
+
+.values-note h2 {
+   margin-bottom: 10px;
+}
+
+
+footer {
+   background: #b39ddb;
+   border-top: 2px solid #7e57c2;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 30px;
+   gap: 10px;
+}
+
+
+.foot-left {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+
+@media (max-width: 850px) {
+   .grid {
+       grid-template-columns: repeat(2, minmax(0, 1fr));
+       padding: 20px;
+   }
+
+
+   nav {
+       flex-wrap: wrap;
+       padding: 12px 20px;
+   }
+
+
+   nav span {
+       min-width: 50%;
+   }
+}
+
+
+@media (max-width: 520px) {
+   .grid {
+       grid-template-columns: 1fr;
+       padding: 16px;
+   }
+
+
+   footer {
+       padding: 18px;
+   }
+}
+
